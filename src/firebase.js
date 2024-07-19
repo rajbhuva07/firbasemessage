@@ -17,7 +17,7 @@ const firebaseConfig = {
 
 
 let messaging;
-let app;
+export let app;
 
 if (typeof window !== "undefined") {
   app = initializeApp(firebaseConfig);
