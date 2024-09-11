@@ -35,12 +35,11 @@ const firebaseConfig = {
   apiKey: "AIzaSyDJBKf7em2pDGmDTvy0E9SzItlJYTgwlZA",
   authDomain: "apipractice-21c1d.firebaseapp.com",
   projectId: "apipractice-21c1d",
-  storageBucket: "gs://apipractice-21c1d.appspot.com",
+  storageBucket: "apipractice-21c1d.appspot.com",
   messagingSenderId: "921585173565",
   appId: "1:921585173565:web:bfec9570f0d8a23482d654",
   measurementId: "G-VPLC1ECFVP"
 };
-
 firebase.initializeApp(firebaseConfig);
 
 // Retrieve firebase messaging
@@ -55,8 +54,6 @@ messaging.onBackgroundMessage((payload) => {
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
-  // event.waitUntil(
-  //   self.registration.showNotification('Test Notification', notificationOptions)
-  // );
+  
  
 });

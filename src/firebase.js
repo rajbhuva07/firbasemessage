@@ -24,7 +24,7 @@ if (typeof window !== "undefined") {
   messaging = getMessaging(app);
 
   // Request for token
-  getToken(messaging, { vapidKey: "BHy4-XfzG6tE9DdJUNqjC3_a-qolbjcEHzI16OrmK2UebdtP4NtHEM84FI34C2u1UzmzQ07ROhT9mjIeipNuY9w" })
+  getToken(messaging, { vapidKey: "BJ-psg9Xz6b2HlzpETDFTWDrfG2HJlyOcQvwJ5eKCnqU_-y2lYH59-kthCe3QN6DHv0fOgwqV0-BLlDob2dpxak" })
     .then((currentToken) => {
       if (currentToken) {
         console.log('current token for client: ', currentToken);
